@@ -5,11 +5,11 @@ import Layout from "./components/Layout/Layout";
 import Products from "./components/Shop/Products";
 
 function App() {
-  const cartUi = useSelector((state) => state.cart.showCart);
+  const showCart = useSelector((state) => state.cartUi.showCart);
 
   return (
     <Layout>
-      {cartUi && <Cart />}
+      {showCart && <Cart />}
       <Products />
     </Layout>
   );

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const state = { showCart: false };
 
 const cartUiSlice = createSlice({
-  name: "cart",
+  name: "cartUi",
   initialState: state,
   reducers: {
     toggle(state) {
